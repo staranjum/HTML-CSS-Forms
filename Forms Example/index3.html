@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            outline:0;
+        }
+        body{
+            background-color: #F6F8F8;
+        }
+
+        #fst-body{
+            height:600px;
+            width:600px;
+            background-color: rgba(71, 107, 128, 0.47);
+            margin: 0 auto;
+            margin-top: 10px;
+        }
+        #main-body{
+            height: 580px;
+            width:570px;
+            background-color: #F3FDFD;
+            margin-top:5px;
+            margin: 0 auto;
+           border-radius: 5px;
+        }
+
+      #heads{
+          text-align: center;
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+
+      #join{
+         
+        
+           color: #1ad;
+           
+           font-size: 30px;
+           line-height: 50px;
+           position: relative;
+        text-transform: uppercase;
+      }
+      #join::after{
+         position: absolute;
+         z-index: 1;
+        right: 0;
+        bottom: -25px;
+        left: 0;
+       display: block;
+       content: 'Join now';
+       transform: scaleY(-1);
+        opacity: .2;
+      }
+      
+     
+      a:link{
+         
+          color: #1ad;
+          font-size: 20px;
+      }
+      #fill{
+          height: 70%;
+          width:90%;
+          background-color: #D7F8FA;
+          border-radius: 10px;
+          margin: 0 auto;
+         
+      }
+      table{
+          margin-left: 15px;
+      }
+
+      table tr td {
+          
+          padding: 10px;
+          
+      }
+
+      table tr td label{
+        font-size:16px;
+      }
+
+      table tr td input{
+         
+         border-color: #12B2FC;
+         border-radius: 3px;
+         
+      }
+      .btn{
+          margin-left: 450px;
+          margin-top:20px;
+          border-radius: 10px;
+      }
+     
+      
+    </style>
+</head>
+<body>
+    
+    <div id="fst-body">
+            <div id="main-body">
+
+                    <div id="heads">
+                        <h1 id="join">Join now</h1><br><br>
+                        <p>Are you already a vibe user ? Then go to <a href="http://www.webdeveloperjuice.com/2009/12/26/coolest-15-css-based-html-forms-rarely-seen/">log in.</a></p>
+                    </div><br>
+
+                    <div id="fill">
+
+                        <table>
+                            <tr>
+                                <td><label for="Email">Email address</label></td>
+                                <td><input type="email" placeholder="email"></td>
+                            </tr><br>
+
+                            <tr>
+                                <td><label for="password">Password</label></td>
+                                <td><input type="password" placeholder="password"></td>
+                            </tr>
+
+                            <tr>
+                                <td><label for="link">Your profile link</label></td>
+                                <td><input type="url"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="bd">Year of birth</label></td>
+                                <td><input list="yrs" name="yrs" id="yrs">
+                                    <select name="yrs" id="yrs" >
+                                        <option min-value="1980">1980</option>
+                                        <option max-value="2017">2017</option>
+                                    </select>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td><label for="conformation">Conform you are a<br> human by typing: </label></td>
+                                <td><input type="image" src="image/captcha.jpg" alt="captcha"></td>
+                            </tr>
+                        </table><br>
+                        <hr>
+
+                        <input  style ="margin-left:20px" type="checkbox" name="line">I have read & agree to the <a href="http://www.webdeveloperjuice.com/2009/12/26/coolest-15-css-based-html-forms-rarely-seen/">Vibr.com</a>
+                    </div>
+
+                        <input class ="btn" type="submit" value =" Get Started">
+                    </div>
+
+                </div>
+        
+    </div>
+</body>
+</html>

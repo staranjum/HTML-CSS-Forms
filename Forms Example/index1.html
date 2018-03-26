@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body{
+            background: #111;
+        }
+        #full-body{
+            background-color: #92B7C5;
+            height: 600px;
+            width: 600px; 
+            margin:0 auto;   
+        }
+        #full-body h1{
+            text-align: center;
+        }
+        #first-body{
+            height: 230px;
+            width: 500px; 
+            background-color: rgba(250, 248, 248, 0.89);
+        }
+
+        #first-body table tr td label{
+
+            font-size: 18px;
+            font-weight: bold;
+        }
+        #first-body table tr td {
+            padding:3px;
+        }
+        #first-body table tr td input{
+           background-color: #ffffff;
+           border-color: #E4DADA;
+        }
+        #second-body{
+            background-color: rgba(250, 248, 248, 0.89);
+            height: 100px;
+            width:500px;  
+        }
+        #third-body{
+            background-color: rgba(250, 248, 248, 0.89);
+            height: 230px;
+            width: 500px;
+        }
+
+    
+    </style>
+</head>
+<body>
+   <div id="full-body">
+
+        <h1>User Input Form</h1>
+        
+                <div id="first-body">
+                    <form >
+                        <fieldset>
+                            <legend>Personal Particular</legend>
+                            <table>
+        
+                                <tr>
+                                    <td><label for="Name">Name:</label></td>
+                                    <td><input type="text" name="name" placeholder="Name"></td>
+                                </tr><br>
+                                <tr>
+                                    <td><label for="Password">Password:</label></td>
+                                    <td><input type="password" name= "password" placeholder="Password"></td>
+                                </tr><br>
+        
+                                <tr>
+                                    <td><label for="Gender">Gender</label></td>
+                                    <td><input type="radio" name="gender" value = "male">Male</td>
+                                    <td><input type="radio" name="gender" value= "female">Female</td>
+                                </tr><br>
+        
+                                <tr>
+                                    <td><label for="Age">Age</label></td>
+                                    <td><input type ="number" name="quantity"  max="70" placeholder="<1 year old"></td>
+                                </tr><br>
+        
+                            </table>
+        
+                        </fieldset>
+                    </form>
+        
+                </div>
+        
+                <div id="Second-body">
+                    <form >
+                            <fieldset>
+                                    <legend>Language</legend>
+                                        
+                                        <input type="checkbox" name="lang" value="Java" >Java
+                                        <input type="checkbox" name="lang" value="C/C++">C/C++
+                                        <input type="checkbox" name="lang" value= "C#">C#
+                             </fieldset>
+                    </form>
+                  
+                </div>
+                
+
+                <div id="third-body">
+                    <fieldset >
+                        <legend>Instruction</legend>
+                        <textarea name="instruction"  cols="60" rows="8">Enter your instructions here....</textarea>
+                       
+                    </fieldset><br>
+
+                    <input type="Submit" name="submit" value="Submit">
+                     <button type="Clear">Clear</button>
+                   
+
+                </div>
+   </div>
+    
+</body>
+</html>
